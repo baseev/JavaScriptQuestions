@@ -1,0 +1,5 @@
+what is the difference between prototypal and classical inheritance.
+What is the pros and cons of prototypal inheritance.
+Where/when should we use nodejs
+Questions on Promises and callbacks
+
