@@ -1,5 +1,9 @@
 what is the difference between prototypal and classical inheritance.
+What is the pros and cons of functional programming.
 What is the pros and cons of prototypal inheritance.
+What is the pros and cons of classical inheritance
 Where/when should we use nodejs
 Questions on Promises and callbacks
-
+Why do we extend using prototype
+What is anonymous closure
+Why we need closures
