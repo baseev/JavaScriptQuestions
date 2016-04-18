@@ -9,10 +9,10 @@ function createShape() {
 	}
 	
 	Shape.prototype.print = function() {
-		console.log("color : "+this.data.color1+", size : "+this.data.color2+", size x :"+this.size.x+", size y :"+this.size.y);
+		console.log("color1 : "+this.data.color1+", color2 : "+this.data.color2+", size x :"+this.size.x+", size y :"+this.size.y);
 	}
 	
-	Shape.setData(data) {
+	Shape.setData = function(data) {
 		defaultData = data;
 	}
 	
@@ -20,24 +20,24 @@ function createShape() {
 		return this.size;
 	}
 	
-	return shape;	
+	return Shape;	
 }
 
 var size = {'x': 10, 'y':20};
 
-var s1 = Shape(size);
-s1.print();
+var s1 = new Shape(size);
+s1.print(); //red, blue, 10, 20
 
 var myData = {'color1': 'green', 'color2': 'yellow'};
 Shape.setData(myData);
 
-s1.print();
+s1.print(); //red, blue, 10, 20
 
-var s2 = Shape(s1.getSize());
-s1.print();
+var s2 = new Shape(s1.getSize());
+s1.print();//red, blue, 10, 20
 
 s2.size.x=100;
-s1.print();
+s1.print();//red, blue, 100, 20
 
 
 

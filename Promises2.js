@@ -24,7 +24,7 @@ function reflect(promise){
 
 
 Promise.all([p1, p2, p3, p4, p5].map(reflect)).then(function(value) { 
-  console.log(value);
+  console.log("resolved : "+value);
 }, function(reason) {
-  console.log(reason)
+  console.log("rejected : "+reason)
 });

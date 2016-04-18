@@ -7,3 +7,5 @@ Questions on Promises and callbacks
 Why do we extend using prototype
 What is anonymous closure
 Why we need closures
+What is the disadvantages of closures
+How to handle overloading in Javascript
